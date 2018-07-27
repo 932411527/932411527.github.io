@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title>Woop - Portfolio Template</title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	
+	<!--<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700,900|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>-->
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/960.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="cform.js"></script>
+	    <meta charset="UTF-8">
+	<title>JS读取和导出excel示例</title>
+	<meta name="description" content="使用sheetjs读取和导出excel示例">
+    <style type="text/css">
+	table {
+	    border-collapse: collapse;
+	}
+	th, td {
+	    border: solid 1px #6D6D6D;
+	    padding: 5px 10px;
+	}
+	.mt-sm {margin-top: 8px;}
+	body {
+		background: #f4f4f4;
+		padding: 0;
+		margin: 0;
+	}
+	.container {
+		width: 1024px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 20px;
+		min-height: 100vh;
+	}
+    </style>
+<script type="text/javascript"> // sticky nav bar 
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
+</script>
+
+<script type="text/javascript"> // fancybox
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a.single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
+	
+</head>
+
+<div class="topbar"></div> <!-- top bar -->
+
+<div id="intro">
+	<div class="title">
+		<h1>hello<br />
+		<span class="small">my name is</span><br />
+		<span class="name">john doe</span><br />
+		<span class="intro_line"></span><span class="amp">&</span><span class="intro_line"></span><br />
+		<span class="small">i'm a web designer</span></h1>
+	</div> <!-- end .title -->
+</div> <!-- end #intro -->
+
+
+<nav>
+	<ul>
+		<li><a href="#intro">home</a></li>
+		<li><a href="#work">work</a></li>
+		<li><a href="#services">services</a></li>
+		<li><a href="#about">about</a></li>
+		<li><a href="#contact">contact</a></li>
+	</ul>
+</nav> <!-- end nav -->
+
+
+<div id="work">
+	<div class="container_16">
+		
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>收支图</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="gallery">
+			<div class="grid_5">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot1 ss"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+			<div class="grid_6">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot2 ss center"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+			<div class="grid_5">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot3 ss"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+		
+			<div class="spacer">&nbsp;</div>
+		
+			<div class="grid_5">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot4 ss"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+			<div class="grid_6">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot5 ss center"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+			<div class="grid_5">
+				<a href="img/example_img.png" class="single_image"><div class="screenshot6 ss"></div></a>
+				<p>Website name<br />
+				<span class="ss_text">Web Design / Development</span>
+				</p>
+			</div>
+		</div><!-- end .gallery -->
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #work -->
+
+<div class="work_bg_bottom"></div>
+<div class="copyrights">Collect from <a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+
+
+<div class="services_bg_bottom"></div>
+
+<div id="about">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>关于我</h2><div class="subheader_line"></div>
+		</div>
+	
+	<div class="grid_5">
+		<div class="about_pic"></div>
+		<div class="social">
+			<ul>
+				<li><a href="#"><div class="twitter sprite"></div></a></li>
+				<li><a href="#"><div class="facebook sprite"></div></a></li>
+				<li><a href="#"><div class="linkedin sprite"></div></a></li>
+				<li><a href="#"><div class="dribble sprite"></div></a></li>
+			</ul>
+		</div> <!-- end .social -->
+	</div> <!-- end .grid_5 -->
+	
+	<div class="grid_6">
+			<div class="about_copy">
+			<h4>黄在晨 35320172200155</h4>
+			<p>作为一名运动爱好者，我希望更多的人和我一样热爱运动，热爱生命。生命在于运动，保持健康的身体，离不开运动。生命在于运动，运动在于锻炼，锻炼贵在坚持，坚持就是胜利。 </p>
+			<p>只有不断坚持才能更加幸福快乐的生活，拥有一副好的健康体魄，已经成为现代人的一种追求。</p>
+			<p>热爱运动的人也有一种加持不懈的精神，那是一种无法替代的巨大精神财富，他带领我们走向成功，即使困难再多，我们也会逐一克服，只因我们不喜欢放弃。</p>
+		</div> <!-- end .about_copy -->
+	</div> <!-- end .grid_6 -->
+	
+	<div class="grid_5">
+		<div class="skills">
+			<h4>特长</h4>
+			<ul>
+				<li><div class="skill1"><p>篮球</p></div></li>
+				<li><div class="skill2"><p>足球</p></div></li>
+				<li><div class="skill3"><p>长跑</p></div></li>
+				<li><div class="skill4"><p>羽毛球</p></div></li>
+				<li><div class="skill5"><p>排球</p></div></li>
+				<li><div class="skill6"><p>橄榄球</p></div></li>
+			</ul>
+		</div> <!-- end .skills -->
+	</div> <!-- end .grid_5 -->
+	
+	</div> <!-- end .container_16 -->
+</div> <!-- end #about -->
+
+<div class="about_bg_bottom"></div>
+
+<div id="contact">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>个人开支</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="container">
+
+		<h2><a href="javascript:selectFile()"><font size="4" color="blue">选择读取的数据excel</font></a></h2>
+		<div class="mt-sm">
+			<input type="file" id="file" style="display:none;" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+			
+	
+		</div>
+		
+		<p>结果输出：</p>
+		<div id="result" contenteditable></div>
+
+		
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/xlsx.core.min.js"></script>
+	<script type="text/javascript">
+
+	function selectFile() {
+		document.getElementById('file').click();
+	}
+
+	// 读取本地excel文件
+	function readWorkbookFromLocalFile(file, callback) {
+		var reader = new FileReader();
+		reader.onload = function(e) {
+			var data = e.target.result;
+			var workbook = XLSX.read(data, {type: 'binary'});
+			if(callback) callback(workbook);
+		};
+		reader.readAsBinaryString(file);
+	}
+
+
+	function readWorkbook(workbook) {
+		var sheetNames = workbook.SheetNames; // 工作表名称集合
+		var worksheet = workbook.Sheets[sheetNames[0]]; // 这里我们只读取第一张sheet
+		var csv = XLSX.utils.sheet_to_csv(worksheet);
+		document.getElementById('result').innerHTML = csv2table(csv);
+	}
+
+	// 将csv转换成表格
+	function csv2table(csv)
+	{
+		var html = '<table>';
+		var rows = csv.split('\n');
+		rows.pop(); // 最后一行没用的
+		rows.forEach(function(row, idx) {
+			var columns = row.split(',');
+			columns.unshift(idx+1); // 添加行索引
+			if(idx == 0) { // 添加列索引
+				html += '<tr>';
+				for(var i=0; i<columns.length; i++) {
+					html += '<th>' + (i==0?'':String.fromCharCode(65+i-1)) + '</th>';
+				}
+				html += '</tr>';
+			}
+			html += '<tr>';
+			columns.forEach(function(column) {
+				html += '<td>'+column+'</td>';
+			});
+			html += '</tr>';
+		});
+		html += '</table>';
+		return html;
+	}
+
+
+
+	
+
+	$(function() {
+		document.getElementById('file').addEventListener('change', function(e) {
+			var files = e.target.files;
+			if(files.length == 0) return;
+			var f = files[0];
+			if(!/\.xlsx$/g.test(f.name)) {
+				alert('仅支持读取xlsx格式！');
+				return;
+			}
+			readWorkbookFromLocalFile(f, function(workbook) {
+				readWorkbook(workbook);
+			});
+		});
+		loadRemoteFile('./sample/test.xlsx');
+	});
+	</script>
+		
+			<div class="map">
+				
+			</div> <!-- end .map -->
+			
+		</div> <!-- end .grid_9 -->
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #contact -->
+
+<div class="contact_bg_bottom"></div>
+
+<footer>
+	<p>&copy; 2012 All rights reserved  <a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</footer>
